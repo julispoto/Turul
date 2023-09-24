@@ -1,0 +1,223 @@
+
+/*
+para hacer columnas
+column-count:3;
+column-gap :1em;
+column-rule :1px solid black;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 4.5em;
+  background-image: url(fondo-turul2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 23em;
+  }
+
+.homedireccion{
+    font-size: 1.1em;
+    font-weight: 800;
+    padding-left: 2em;
+    margin-bottom: 3.7em;
+}
+.columna{
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: 400;
+    font-size: 1.3em;
+      float: left;
+      height: auto; 
+}
+
+.homelinea{
+  padding-left: 1em;
+}
+
+.nav2 {
+  display: flex;
+  justify-content:space-between;
+
+    list-style: none;
+    
+}
+
+.nav2 a {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 501;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  border: solid  #e78e2c 4px;
+ 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #b9b7b6;
+  
+  transition: transform 0.2s ease-in-out;
+  letter-spacing: -0.063em;
+line-height: 25px;
+}
+
+
+/* Change color on hover */
+.nav2 a:hover {
+  background-color: #ddd;
+  color: black;
+  transform: scale(1.1);
+}
+
+.row {  
+ display: flex;
+ 
+  background-color: #d8d6d7;
+  border-end-end-radius: 20px;
+  border: solid #e78e2c 4px;
+ height: ;
+  box-shadow:  -20px 20px #4a7a86;
+}
+
+.side { 
+  background-color: #d8d6d7;
+   padding-top: 1em;
+}
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 850px) {
+
+  .nav2{
+    display: none;
+  }
+  .row{   
+    padding-top: 45px;    
+  }
+
+  body{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-size: 150% 20%;
+    padding-left: 0;
+    margin-top: 0em;
+    background-color: #fbc074;
+  }
+
+.homedireccion{
+  margin-bottom: 1em;
+}
+.homelinea{
+  width: 70%;
+}
+.columna{
+  width: 100%;
+
+}
+
+.fotos {
+  width: 100%;
+  
+}
+.fotocafhim, .homefoto2, .marca{
+  display: none;
+}
+.tresfotos{
+  padding-left: 5em;
+   }
+
+  }
+
+
+
+
+
+
+
+@media  (min-width: 851px)  {
+  body{
+    margin-left: 40px;
+    margin-right: 40px;
+    background-size: 100% 50%;
+    padding-left: 0;
+    margin-top: 15em;
+  }
+
+ 
+  .home{
+    background-color: #d8d6d7 !important;
+    border-bottom-color: #d8d6d7 !important;
+  }
+  
+.homelinea{
+  width: 40%;
+}
+
+.tresfotos, .topheader, .topnav, .logo, .logotype, .open-menu, .menu, .close-menu, .nav1{
+  display: none;
+}
+.fotocafhim, .homefoto2, .marca{
+  display: block;
+}
+.columna{
+  
+  width: 33%;
+}
+
+.side{
+  
+ display: grid;
+ grid-template-columns: 10.7em 1.5fr 1fr ;
+ grid-template-rows: 7.5em 2em 10em auto;
+  
+}
+.columna2{
+  padding-top: 1em;
+  grid-area: 2/1/-1/7;
+}
+.homelinea{
+  grid-area: 2/1/3/3;
+  width: 25%;
+}
+}
+.fotos{
+ grid-area: 1/3/5/-1;
+ 
+
+}
+
+/*
+{
+  display: grid;
+  grid-template-columns: repeat(9, minmax(100px, auto));
+  grid-template-rows: repeat(9, minmax(100px, auto));
+}
+*/
+
+
+.homefoto2{
+margin-top: 3em;
+
+width: 140%;
+
+
+}
+.fotocafhim{
+  margin-top: 2em;
+ width: 120%;
+ 
+}
+.marca{
+  width: 50%;
+position: absolute;
+top: 18em;
+left: 20em;
+}
