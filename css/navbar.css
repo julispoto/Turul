@@ -78,7 +78,7 @@ letter-spacing: 0.438em;
 
 
 
-@media (max-width: 355px) {
+@media (max-width: 655px) {
   
   .menu {
     flex-direction: column;
