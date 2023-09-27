@@ -1,0 +1,110 @@
+@media (min-width: 656px) {
+  body {
+    margin-left: 40px;
+    margin-right: 40px;
+    background-size: 100% 70%;
+    background-color: #e6902b;
+    padding-left: 0;
+    margin-top: 10em;
+  }
+
+  .homedireccion {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 0.9em;
+  }
+
+  .nav2 {
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+  }
+
+  .nav2 a {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    border: solid #e78e2c 4px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #b9b7b6;
+    transition: transform 0.3s ease-in-out;
+    font-size: 14px;
+    line-height: 39px;
+    letter-spacing: -0.013em;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nav2 a:hover {
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.1);
+  }
+
+  .home {
+    background-color: #d8d6d7 !important;
+    border-bottom-color: #d8d6d7 !important;
+  }
+
+  .homelinea {width: 40%;}
+  
+  .tresfotos,
+  .topheader,
+  .topnav,
+  .logo,
+  .logotype,
+  .open-menu,
+  .menu,
+  .close-menu,
+  .nav1 {
+    display: none;
+  }
+  .fotocafhim,
+  .homefoto2,
+  .marca {
+    display: block;
+  }
+  .columna {
+    font-size: 1em;
+    width: 33%;
+  }
+  .side {
+    display: grid;
+    grid-template-columns: 10.7em 1.5fr 1fr;
+    grid-template-rows: 7.5em 3em 10em auto;
+    font-size: 14px;
+  }
+  .columna2 {
+    padding-top: 2em;
+    grid-area: 2/1/-1/7;
+  }
+  .homelinea {
+    grid-area: 2/1/3/3;
+  }
+}
+.fotos {
+  grid-area: 1/3/5/-1;
+}
+.homefoto2 {
+  margin-top: 3em;
+  width: 140%;
+}
+.fotocafhim {
+  margin-left: 1em;
+  margin-top: 2em;
+  width: 120%;
+}
+.marca {
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+@media (min-width: 1100px) {
+  body {
+    max-width: 600px;
+    background-size: 800px;
+  }
+
+}
